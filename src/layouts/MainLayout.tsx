@@ -12,8 +12,7 @@ export default function MainLayout({ children }: Props) {
       style={{
         display: "flex",
         minHeight: "100vh",
-        background: "#0f172a",
-        color: "white",
+        background: "#020617",
       }}
     >
       <Sidebar />
@@ -29,10 +28,20 @@ export default function MainLayout({ children }: Props) {
 
         <main
           style={{
-            padding: "30px",
+            flex: 1,
+            padding: "35px",
+            background:
+              "linear-gradient(180deg,#0f172a 0%, #111827 100%)",
           }}
         >
-          {children}
+          <div
+            style={{
+              maxWidth: "1400px",
+              margin: "auto",
+            }}
+          >
+            {children}
+          </div>
         </main>
       </div>
     </div>

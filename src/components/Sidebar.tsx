@@ -2,35 +2,58 @@ export default function Sidebar() {
   return (
     <aside
       style={{
-        width: "260px",
-        background: "#111827",
+        width: "270px",
+        background: "#020617",
         borderLeft: "1px solid #1e293b",
-        padding: "25px",
+        display: "flex",
+        flexDirection: "column",
+        padding: "28px",
       }}
     >
-      <h1
+      <h2
         style={{
-          marginBottom: "40px",
           color: "#38bdf8",
+          marginBottom: "40px",
+          fontSize: "26px",
+          fontWeight: "bold",
         }}
       >
-        صانع المحتوى الذكي
-      </h1>
+        🚀 نبض المحتوى
+      </h2>
 
       <nav
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "15px",
+          gap: "10px",
         }}
       >
-        <a href="#">🏠 لوحة التحكم</a>
-        <a href="#">✍️ الكاتب الذكي</a>
-        <a href="#">📅 الجدولة</a>
-        <a href="#">📊 التحليلات</a>
-        <a href="#">💡 بنك الأفكار</a>
-        <a href="#">⚙️ الإعدادات</a>
+        <a href="#" style={linkStyle}>🏠 لوحة التحكم</a>
+        <a href="#" style={linkStyle}>✍️ الكاتب الذكي</a>
+        <a href="#" style={linkStyle}>📅 الجدولة</a>
+        <a href="#" style={linkStyle}>📊 التحليلات</a>
+        <a href="#" style={linkStyle}>💡 بنك الأفكار</a>
+        <a href="#" style={linkStyle}>⚙️ الإعدادات</a>
       </nav>
+
+      <div
+        style={{
+          marginTop: "auto",
+          color: "#94a3b8",
+          fontSize: "14px",
+        }}
+      >
+        الإصدار 0.1
+      </div>
     </aside>
   );
 }
+
+const linkStyle = {
+  display: "block",
+  padding: "14px 18px",
+  borderRadius: "12px",
+  background: "#111827",
+  color: "#f8fafc",
+  textDecoration: "none",
+};
